@@ -8,4 +8,3 @@ for (let i = 0; i < categories.length; i++) {
     Elements: ${categories[i].lastElementChild.children.length}`
   );
 }
-console.log(categories[0].lastElementChild);
