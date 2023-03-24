@@ -11,12 +11,12 @@ function handleSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert("You cannot leave any of the fields empty.");
   }
-  const credentialsProvided = {
+  const providedCredentials = {
     email: email.value,
     password: password.value,
   };
 
-  console.log(credentialsProvided);
+  console.log(providedCredentials);
   formEl.reset();
 }
 formEl.addEventListener("submit", handleSubmit);
