@@ -13,14 +13,16 @@ const createBoxes = (amount) => {
     alert("Please specify the number 1-100");
   }
   let markup = ``;
-  boxesEl.innerHTML = ``;
-
-  for (let i = 0; i < inputEl.value; i++) {
+  for (
+    let i = boxesEl.children.length;
+    i < Number(inputEl.value) + Number(boxesEl.children.length);
+    i++
+  ) {
     markup += `<div style= "width: ${30 + i * 10}px; height: ${
       30 + i * 10
     }px; background-color: ${getRandomHexColor()}"></div>`;
   }
-  boxesEl.innerHTML = markup;
+  boxesEl.innerHTML += markup;
 };
 const destroyBoxes = () => {
   boxesEl.innerHTML = ``;
