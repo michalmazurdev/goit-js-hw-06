@@ -15,7 +15,7 @@ const images = [
 
 const listEl = document.querySelector(".gallery");
 let markup = ``;
-for (let image of images) {
+for (const image of images) {
   markup += `<li><img src=${image.url} alt=${image.alt}></li>`;
 }
 listEl.insertAdjacentHTML("beforeend", markup);

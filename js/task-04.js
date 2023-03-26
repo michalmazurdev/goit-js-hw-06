@@ -7,10 +7,8 @@ const incrementBtnEl = document.querySelector(
 );
 const counterEl = document.getElementById("value");
 decrementBtnEl.addEventListener("click", () => {
-  counterValue -= 1;
-  counterEl.textContent = counterValue;
+  counterEl.textContent = --counterValue;
 });
 incrementBtnEl.addEventListener("click", () => {
-  counterValue += 1;
-  counterEl.textContent = counterValue;
+  counterEl.textContent = ++counterValue;
 });
