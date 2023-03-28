@@ -18,9 +18,11 @@ const createBoxes = (amount) => {
     i < Number(inputEl.value) + Number(boxesEl.children.length);
     i++
   ) {
-    markup += `<div style= "width: ${30 + i * 10}px; height: ${
-      30 + i * 10
-    }px; background-color: ${getRandomHexColor()}"></div>`;
+    markup += `<div style=
+    "width: ${30 + i * 10}px;
+    height: ${30 + i * 10}px;
+    background-color: ${getRandomHexColor()}">
+    </div>`;
   }
   boxesEl.innerHTML += markup;
 };
